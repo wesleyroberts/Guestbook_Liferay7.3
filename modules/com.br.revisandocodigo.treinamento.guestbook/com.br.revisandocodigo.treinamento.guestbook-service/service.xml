@@ -36,11 +36,6 @@
 		<finder name="GroupId" return-type="Collection">
 			<finder-column name="groupId" />
 		</finder>
-
-		<!-- References -->
-
-		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
-		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
 	</entity>
 	<entity name="GuestbookEntry" local-service="true" remote-service="true" uuid="true">
 
