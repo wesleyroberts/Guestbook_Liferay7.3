@@ -1,6 +1,7 @@
 package com.br.revisandocodigo.treinamento.guestbook.aplication;
 
 
+import com.br.revisandocodigo.treinamento.guestbook.constants.GuestbookWebPortletKeys;
 import com.liferay.application.list.BasePanelApp;
 import com.liferay.application.list.PanelApp;
 import com.liferay.application.list.constants.PanelCategoryKeys;
@@ -21,12 +22,12 @@ public class GuestbookAdminPanelApp extends BasePanelApp {
 
     @Override
     public String getPortletId() {
-        return GuestbookPortletKeys.GUESTBOOK_ADMIN;
+        return GuestbookWebPortletKeys.GUESTBOOK_ADMIN;
     }
 
     @Override
     @Reference(
-            target = "(javax.portlet.name=" + GuestbookPortletKeys.GUESTBOOK_ADMIN + ")",
+            target = "(javax.portlet.name=" + GuestbookWebPortletKeys.GUESTBOOK_ADMIN + ")",
             unbind = "-"
     )
     public void setPortlet(Portlet portlet) {
