@@ -1,0 +1,4 @@
+Bundle-Name: guestbook-web
+Bundle-SymbolicName: com.br.revisandocodigo.treinamento.guestbook
+Bundle-Version: 1.0.0
+Export-Package: com.br.revisandocodigo.treinamento.guestbook.constants
