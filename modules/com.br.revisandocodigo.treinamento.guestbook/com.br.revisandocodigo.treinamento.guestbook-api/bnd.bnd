@@ -1,0 +1,10 @@
+Bundle-Name: com.br.revisandocodigo.treinamento.guestbook-api
+Bundle-SymbolicName: guestbook.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	guestbook.exception,\
+	guestbook.model,\
+	guestbook.service,\
+	guestbook.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../com.br.revisandocodigo.treinamento.guestbook-service/service.xml

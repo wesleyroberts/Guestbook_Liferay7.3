@@ -1,0 +1,11 @@
+dependencies {
+	api project(":modules:com.br.revisandocodigo.treinamento.guestbook:com.br.revisandocodigo.treinamento.guestbook-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+buildService {
+	apiDir = "../com.br.revisandocodigo.treinamento.guestbook-api/src/main/java"
+}
+
+group = "guestbook"
