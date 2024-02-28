@@ -50,6 +50,14 @@ public class GuestbookLocalServiceUtil {
 		return getService().addGuestbook(guestbook);
 	}
 
+	public static Guestbook addGuestbook(
+			long userId, String name,
+			com.liferay.portal.kernel.service.ServiceContext serviceContext)
+		throws PortalException {
+
+		return getService().addGuestbook(userId, name, serviceContext);
+	}
+
 	/**
 	 * Creates a new guestbook with the primary key. Does not add the guestbook to the database.
 	 *
@@ -262,6 +270,22 @@ public class GuestbookLocalServiceUtil {
 		return getService().getGuestbooks(start, end);
 	}
 
+	public static List<Guestbook> getGuestbooks(long groupId) {
+		return getService().getGuestbooks(groupId);
+	}
+
+	public static List<Guestbook> getGuestbooks(
+		long groupId, int start, int end) {
+
+		return getService().getGuestbooks(groupId, start, end);
+	}
+
+	public static List<Guestbook> getGuestbooks(
+		long groupId, int start, int end, OrderByComparator<Guestbook> obc) {
+
+		return getService().getGuestbooks(groupId, start, end, obc);
+	}
+
 	/**
 	 * Returns all the guestbooks matching the UUID and company.
 	 *
@@ -300,6 +324,10 @@ public class GuestbookLocalServiceUtil {
 	 */
 	public static int getGuestbooksCount() {
 		return getService().getGuestbooksCount();
+	}
+
+	public static int getGuestbooksCount(long groupId) {
+		return getService().getGuestbooksCount(groupId);
 	}
 
 	public static
