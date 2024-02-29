@@ -6,9 +6,9 @@
 package com.br.revisandocodigo.treinamento.guestbook.service.persistence;
 
 import com.br.revisandocodigo.treinamento.guestbook.exception.NoSuchGuestbookEntryException;
-import com.liferay.portal.kernel.service.persistence.BasePersistence;
-
 import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookEntry;
+
+import com.liferay.portal.kernel.service.persistence.BasePersistence;
 
 import org.osgi.annotation.versioning.ProviderType;
 

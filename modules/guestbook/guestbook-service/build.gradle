@@ -5,7 +5,7 @@ dependencies {
 }
 
 buildService {
-	apiDir = "../com.br.revisandocodigo.treinamento.guestbook-api/src/main/java"
+	apiDir = "../guestbook-api/src/main/java"
 }
 
 group = "guestbook"

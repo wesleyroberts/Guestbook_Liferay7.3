@@ -5,12 +5,11 @@
 
 package com.br.revisandocodigo.treinamento.guestbook.service.persistence;
 
-import com.br.revisandocodigo.treinamento.guestbook.exception.NoSuchGuestbookException;
+import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
+
 import com.liferay.portal.kernel.dao.orm.DynamicQuery;
 import com.liferay.portal.kernel.service.ServiceContext;
 import com.liferay.portal.kernel.util.OrderByComparator;
-
-import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
 
 import java.io.Serializable;
 
@@ -19,7 +18,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * The persistence utility for the guestbook service. This utility wraps <code>guestbook.service.persistence.impl.GuestbookPersistenceImpl</code> and provides direct access to the database for CRUD operations. This utility should only be used by the service layer, as it must operate within a transaction. Never access this utility in a JSP, controller, model, or other front-end class.
+ * The persistence utility for the guestbook service. This utility wraps <code>com.br.revisandocodigo.treinamento.guestbook.service.persistence.impl.GuestbookPersistenceImpl</code> and provides direct access to the database for CRUD operations. This utility should only be used by the service layer, as it must operate within a transaction. Never access this utility in a JSP, controller, model, or other front-end class.
  *
  * <p>
  * Caching information and settings can be found in <code>portal.properties</code>
@@ -191,7 +190,8 @@ public class GuestbookUtil {
 	 */
 	public static Guestbook findByUuid_First(
 			String uuid, OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByUuid_First(uuid, orderByComparator);
 	}
@@ -219,7 +219,8 @@ public class GuestbookUtil {
 	 */
 	public static Guestbook findByUuid_Last(
 			String uuid, OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByUuid_Last(uuid, orderByComparator);
 	}
@@ -249,7 +250,8 @@ public class GuestbookUtil {
 	public static Guestbook[] findByUuid_PrevAndNext(
 			long guestBookId, String uuid,
 			OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByUuid_PrevAndNext(
 			guestBookId, uuid, orderByComparator);
@@ -283,7 +285,8 @@ public class GuestbookUtil {
 	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
 	 */
 	public static Guestbook findByUUID_G(String uuid, long groupId)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByUUID_G(uuid, groupId);
 	}
@@ -321,7 +324,8 @@ public class GuestbookUtil {
 	 * @return the guestbook that was removed
 	 */
 	public static Guestbook removeByUUID_G(String uuid, long groupId)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().removeByUUID_G(uuid, groupId);
 	}
@@ -425,7 +429,8 @@ public class GuestbookUtil {
 	public static Guestbook findByUuid_C_First(
 			String uuid, long companyId,
 			OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByUuid_C_First(
 			uuid, companyId, orderByComparator);
@@ -459,7 +464,8 @@ public class GuestbookUtil {
 	public static Guestbook findByUuid_C_Last(
 			String uuid, long companyId,
 			OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByUuid_C_Last(
 			uuid, companyId, orderByComparator);
@@ -494,7 +500,8 @@ public class GuestbookUtil {
 	public static Guestbook[] findByUuid_C_PrevAndNext(
 			long guestBookId, String uuid, long companyId,
 			OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByUuid_C_PrevAndNext(
 			guestBookId, uuid, companyId, orderByComparator);
@@ -603,7 +610,8 @@ public class GuestbookUtil {
 	 */
 	public static Guestbook findByGroupId_First(
 			long groupId, OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByGroupId_First(groupId, orderByComparator);
 	}
@@ -632,7 +640,8 @@ public class GuestbookUtil {
 	 */
 	public static Guestbook findByGroupId_Last(
 			long groupId, OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByGroupId_Last(groupId, orderByComparator);
 	}
@@ -662,7 +671,8 @@ public class GuestbookUtil {
 	public static Guestbook[] findByGroupId_PrevAndNext(
 			long guestBookId, long groupId,
 			OrderByComparator<Guestbook> orderByComparator)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByGroupId_PrevAndNext(
 			guestBookId, groupId, orderByComparator);
@@ -723,7 +733,8 @@ public class GuestbookUtil {
 	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
 	 */
 	public static Guestbook remove(long guestBookId)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().remove(guestBookId);
 	}
@@ -740,7 +751,8 @@ public class GuestbookUtil {
 	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
 	 */
 	public static Guestbook findByPrimaryKey(long guestBookId)
-		throws NoSuchGuestbookException {
+		throws com.br.revisandocodigo.treinamento.guestbook.exception.
+			NoSuchGuestbookException {
 
 		return getPersistence().findByPrimaryKey(guestBookId);
 	}

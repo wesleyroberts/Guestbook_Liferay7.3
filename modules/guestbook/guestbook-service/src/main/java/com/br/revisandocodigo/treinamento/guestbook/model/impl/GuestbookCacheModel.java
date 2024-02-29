@@ -5,11 +5,11 @@
 
 package com.br.revisandocodigo.treinamento.guestbook.model.impl;
 
+import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
+
 import com.liferay.petra.lang.HashUtil;
 import com.liferay.petra.string.StringBundler;
 import com.liferay.portal.kernel.model.CacheModel;
-
-import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
 
 import java.io.Externalizable;
 import java.io.IOException;

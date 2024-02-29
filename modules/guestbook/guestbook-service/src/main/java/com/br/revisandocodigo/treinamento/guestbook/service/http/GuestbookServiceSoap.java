@@ -7,7 +7,7 @@ package com.br.revisandocodigo.treinamento.guestbook.service.http;
 
 /**
  * Provides the SOAP utility for the
- * <code>guestbook.service.GuestbookServiceUtil</code> service
+ * <code>com.br.revisandocodigo.treinamento.guestbook.service.GuestbookServiceUtil</code> service
  * utility. The static methods of this class call the same methods of the
  * service utility. However, the signatures are different because it is
  * difficult for SOAP to support certain types.
@@ -16,10 +16,10 @@ package com.br.revisandocodigo.treinamento.guestbook.service.http;
  * ServiceBuilder follows certain rules in translating the methods. For example,
  * if the method in the service utility returns a <code>java.util.List</code>,
  * that is translated to an array of
- * <code>guestbook.model.GuestbookSoap</code>. If the method in the
+ * <code>com.br.revisandocodigo.treinamento.guestbook.model.GuestbookSoap</code>. If the method in the
  * service utility returns a
- * <code>guestbook.model.Guestbook</code>, that is translated to a
- * <code>guestbook.model.GuestbookSoap</code>. Methods that SOAP
+ * <code>com.br.revisandocodigo.treinamento.guestbook.model.Guestbook</code>, that is translated to a
+ * <code>com.br.revisandocodigo.treinamento.guestbook.model.GuestbookSoap</code>. Methods that SOAP
  * cannot safely wire are skipped.
  * </p>
  *

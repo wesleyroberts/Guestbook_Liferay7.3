@@ -5,6 +5,10 @@
 
 package com.br.revisandocodigo.treinamento.guestbook.model.impl;
 
+import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
+import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookModel;
+import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookSoap;
+
 import com.liferay.expando.kernel.model.ExpandoBridge;
 import com.liferay.expando.kernel.util.ExpandoBridgeFactoryUtil;
 import com.liferay.exportimport.kernel.lar.StagedModelType;
@@ -23,10 +27,6 @@ import com.liferay.portal.kernel.util.PortalUtil;
 import com.liferay.portal.kernel.util.ProxyUtil;
 import com.liferay.portal.kernel.util.StringUtil;
 import com.liferay.portal.kernel.workflow.WorkflowConstants;
-
-import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
-import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookModel;
-import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookSoap;
 
 import java.io.Serializable;
 

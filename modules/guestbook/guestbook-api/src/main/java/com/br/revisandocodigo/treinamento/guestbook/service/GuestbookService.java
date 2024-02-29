@@ -36,7 +36,7 @@ public interface GuestbookService extends BaseService {
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify this interface directly. Add custom service methods to <code>guestbook.service.impl.GuestbookServiceImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface. Consume the guestbook remote service via injection or a <code>org.osgi.util.tracker.ServiceTracker</code>. Use {@link GuestbookServiceUtil} if injection and service tracking are not available.
+	 * Never modify this interface directly. Add custom service methods to <code>com.br.revisandocodigo.treinamento.guestbook.service.impl.GuestbookServiceImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface. Consume the guestbook remote service via injection or a <code>org.osgi.util.tracker.ServiceTracker</code>. Use {@link GuestbookServiceUtil} if injection and service tracking are not available.
 	 */
 
 	/**

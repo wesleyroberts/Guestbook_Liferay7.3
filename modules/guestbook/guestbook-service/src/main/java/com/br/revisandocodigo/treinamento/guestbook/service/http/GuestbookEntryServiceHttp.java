@@ -7,7 +7,7 @@ package com.br.revisandocodigo.treinamento.guestbook.service.http;
 
 /**
  * Provides the HTTP utility for the
- * <code>guestbook.service.GuestbookEntryServiceUtil</code> service
+ * <code>com.br.revisandocodigo.treinamento.guestbook.service.GuestbookEntryServiceUtil</code> service
  * utility. The
  * static methods of this class calls the same methods of the service utility.
  * However, the signatures are different because it requires an additional

@@ -18,14 +18,16 @@ import org.osgi.annotation.versioning.ProviderType;
  * @see GuestbookModel
  * @generated
  */
-@ImplementationClassName("guestbook.model.impl.GuestbookImpl")
+@ImplementationClassName(
+	"com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookImpl"
+)
 @ProviderType
 public interface Guestbook extends GuestbookModel, PersistedModel {
 
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify this interface directly. Add methods to <code>guestbook.model.impl.GuestbookImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface.
+	 * Never modify this interface directly. Add methods to <code>com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface.
 	 */
 	public static final Accessor<Guestbook, Long> GUEST_BOOK_ID_ACCESSOR =
 		new Accessor<Guestbook, Long>() {

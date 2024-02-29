@@ -11,7 +11,8 @@ package com.br.revisandocodigo.treinamento.guestbook.service.persistence.impl.co
  */
 public class GBPersistenceConstants {
 
-	public static final String BUNDLE_SYMBOLIC_NAME = "guestbook.service";
+	public static final String BUNDLE_SYMBOLIC_NAME =
+		"com.br.revisandocodigo.treinamento.guestbook.service";
 
 	public static final String ORIGIN_BUNDLE_SYMBOLIC_NAME_FILTER =
 		"(origin.bundle.symbolic.name=" + BUNDLE_SYMBOLIC_NAME + ")";

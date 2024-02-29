@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * This class is used by SOAP remote services, specifically {@link guestbook.service.http.GuestbookServiceSoap}.
+ * This class is used by SOAP remote services, specifically {@link com.br.revisandocodigo.treinamento.guestbook.service.http.GuestbookServiceSoap}.
  *
  * @author wesleyroberts
  * @deprecated As of Athanasius (7.3.x), with no direct replacement

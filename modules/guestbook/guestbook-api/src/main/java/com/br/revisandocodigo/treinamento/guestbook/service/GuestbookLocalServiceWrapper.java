@@ -5,7 +5,6 @@
 
 package com.br.revisandocodigo.treinamento.guestbook.service;
 
-import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
 import com.liferay.portal.kernel.service.ServiceWrapper;
 import com.liferay.portal.kernel.service.persistence.BasePersistence;
 
@@ -36,16 +35,19 @@ public class GuestbookLocalServiceWrapper
 	 * @return the guestbook that was added
 	 */
 	@Override
-	public Guestbook addGuestbook(
-		Guestbook guestbook) {
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+		addGuestbook(
+			com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+				guestbook) {
 
 		return _guestbookLocalService.addGuestbook(guestbook);
 	}
 
 	@Override
-	public Guestbook addGuestbook(
-			long userId, String name,
-			com.liferay.portal.kernel.service.ServiceContext serviceContext)
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+			addGuestbook(
+				long userId, String name,
+				com.liferay.portal.kernel.service.ServiceContext serviceContext)
 		throws com.liferay.portal.kernel.exception.PortalException {
 
 		return _guestbookLocalService.addGuestbook(
@@ -59,7 +61,9 @@ public class GuestbookLocalServiceWrapper
 	 * @return the new guestbook
 	 */
 	@Override
-	public Guestbook createGuestbook(long guestBookId) {
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+		createGuestbook(long guestBookId) {
+
 		return _guestbookLocalService.createGuestbook(guestBookId);
 	}
 
@@ -85,8 +89,10 @@ public class GuestbookLocalServiceWrapper
 	 * @return the guestbook that was removed
 	 */
 	@Override
-	public Guestbook deleteGuestbook(
-		Guestbook guestbook) {
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+		deleteGuestbook(
+			com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+				guestbook) {
 
 		return _guestbookLocalService.deleteGuestbook(guestbook);
 	}
@@ -103,16 +109,18 @@ public class GuestbookLocalServiceWrapper
 	 * @throws PortalException if a guestbook with the primary key could not be found
 	 */
 	@Override
-	public Guestbook deleteGuestbook(long guestBookId)
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+			deleteGuestbook(long guestBookId)
 		throws com.liferay.portal.kernel.exception.PortalException {
 
 		return _guestbookLocalService.deleteGuestbook(guestBookId);
 	}
 
 	@Override
-	public Guestbook deleteGuestbook(
-			long guestbookId,
-			com.liferay.portal.kernel.service.ServiceContext serviceContext)
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+			deleteGuestbook(
+				long guestbookId,
+				com.liferay.portal.kernel.service.ServiceContext serviceContext)
 		throws com.liferay.portal.kernel.exception.PortalException,
 			   com.liferay.portal.kernel.exception.SystemException {
 
@@ -153,7 +161,7 @@ public class GuestbookLocalServiceWrapper
 	 * Performs a dynamic query on the database and returns a range of the matching rows.
 	 *
 	 * <p>
-	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent, then the query will include the default ORDER BY logic from <code>guestbook.model.impl.GuestbookModelImpl</code>.
+	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent, then the query will include the default ORDER BY logic from <code>com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookModelImpl</code>.
 	 * </p>
 	 *
 	 * @param dynamicQuery the dynamic query
@@ -173,7 +181,7 @@ public class GuestbookLocalServiceWrapper
 	 * Performs a dynamic query on the database and returns an ordered range of the matching rows.
 	 *
 	 * <p>
-	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent, then the query will include the default ORDER BY logic from <code>guestbook.model.impl.GuestbookModelImpl</code>.
+	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent, then the query will include the default ORDER BY logic from <code>com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookModelImpl</code>.
 	 * </p>
 	 *
 	 * @param dynamicQuery the dynamic query
@@ -222,7 +230,9 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	@Override
-	public Guestbook fetchGuestbook(long guestBookId) {
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+		fetchGuestbook(long guestBookId) {
+
 		return _guestbookLocalService.fetchGuestbook(guestBookId);
 	}
 
@@ -234,8 +244,8 @@ public class GuestbookLocalServiceWrapper
 	 * @return the matching guestbook, or <code>null</code> if a matching guestbook could not be found
 	 */
 	@Override
-	public Guestbook fetchGuestbookByUuidAndGroupId(
-		String uuid, long groupId) {
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+		fetchGuestbookByUuidAndGroupId(String uuid, long groupId) {
 
 		return _guestbookLocalService.fetchGuestbookByUuidAndGroupId(
 			uuid, groupId);
@@ -266,7 +276,8 @@ public class GuestbookLocalServiceWrapper
 	 * @throws PortalException if a guestbook with the primary key could not be found
 	 */
 	@Override
-	public Guestbook getGuestbook(long guestBookId)
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+			getGuestbook(long guestBookId)
 		throws com.liferay.portal.kernel.exception.PortalException {
 
 		return _guestbookLocalService.getGuestbook(guestBookId);
@@ -281,8 +292,8 @@ public class GuestbookLocalServiceWrapper
 	 * @throws PortalException if a matching guestbook could not be found
 	 */
 	@Override
-	public Guestbook getGuestbookByUuidAndGroupId(
-			String uuid, long groupId)
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+			getGuestbookByUuidAndGroupId(String uuid, long groupId)
 		throws com.liferay.portal.kernel.exception.PortalException {
 
 		return _guestbookLocalService.getGuestbookByUuidAndGroupId(
@@ -293,7 +304,7 @@ public class GuestbookLocalServiceWrapper
 	 * Returns a range of all the guestbooks.
 	 *
 	 * <p>
-	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent, then the query will include the default ORDER BY logic from <code>guestbook.model.impl.GuestbookModelImpl</code>.
+	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent, then the query will include the default ORDER BY logic from <code>com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookModelImpl</code>.
 	 * </p>
 	 *
 	 * @param start the lower bound of the range of guestbooks
@@ -301,31 +312,37 @@ public class GuestbookLocalServiceWrapper
 	 * @return the range of guestbooks
 	 */
 	@Override
-	public java.util.List<Guestbook> getGuestbooks(
-		int start, int end) {
+	public java.util.List
+		<com.br.revisandocodigo.treinamento.guestbook.model.Guestbook>
+			getGuestbooks(int start, int end) {
 
 		return _guestbookLocalService.getGuestbooks(start, end);
 	}
 
 	@Override
-	public java.util.List<Guestbook> getGuestbooks(
-		long groupId) {
+	public java.util.List
+		<com.br.revisandocodigo.treinamento.guestbook.model.Guestbook>
+			getGuestbooks(long groupId) {
 
 		return _guestbookLocalService.getGuestbooks(groupId);
 	}
 
 	@Override
-	public java.util.List<Guestbook> getGuestbooks(
-		long groupId, int start, int end) {
+	public java.util.List
+		<com.br.revisandocodigo.treinamento.guestbook.model.Guestbook>
+			getGuestbooks(long groupId, int start, int end) {
 
 		return _guestbookLocalService.getGuestbooks(groupId, start, end);
 	}
 
 	@Override
-	public java.util.List<Guestbook> getGuestbooks(
-		long groupId, int start, int end,
-		com.liferay.portal.kernel.util.OrderByComparator
-			<Guestbook> obc) {
+	public java.util.List
+		<com.br.revisandocodigo.treinamento.guestbook.model.Guestbook>
+			getGuestbooks(
+				long groupId, int start, int end,
+				com.liferay.portal.kernel.util.OrderByComparator
+					<com.br.revisandocodigo.treinamento.guestbook.model.
+						Guestbook> obc) {
 
 		return _guestbookLocalService.getGuestbooks(groupId, start, end, obc);
 	}
@@ -338,8 +355,9 @@ public class GuestbookLocalServiceWrapper
 	 * @return the matching guestbooks, or an empty list if no matches were found
 	 */
 	@Override
-	public java.util.List<Guestbook>
-		getGuestbooksByUuidAndCompanyId(String uuid, long companyId) {
+	public java.util.List
+		<com.br.revisandocodigo.treinamento.guestbook.model.Guestbook>
+			getGuestbooksByUuidAndCompanyId(String uuid, long companyId) {
 
 		return _guestbookLocalService.getGuestbooksByUuidAndCompanyId(
 			uuid, companyId);
@@ -356,11 +374,13 @@ public class GuestbookLocalServiceWrapper
 	 * @return the range of matching guestbooks, or an empty list if no matches were found
 	 */
 	@Override
-	public java.util.List<Guestbook>
-		getGuestbooksByUuidAndCompanyId(
-			String uuid, long companyId, int start, int end,
-			com.liferay.portal.kernel.util.OrderByComparator
-				<Guestbook> orderByComparator) {
+	public java.util.List
+		<com.br.revisandocodigo.treinamento.guestbook.model.Guestbook>
+			getGuestbooksByUuidAndCompanyId(
+				String uuid, long companyId, int start, int end,
+				com.liferay.portal.kernel.util.OrderByComparator
+					<com.br.revisandocodigo.treinamento.guestbook.model.
+						Guestbook> orderByComparator) {
 
 		return _guestbookLocalService.getGuestbooksByUuidAndCompanyId(
 			uuid, companyId, start, end, orderByComparator);
@@ -420,16 +440,19 @@ public class GuestbookLocalServiceWrapper
 	 * @return the guestbook that was updated
 	 */
 	@Override
-	public Guestbook updateGuestbook(
-		Guestbook guestbook) {
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+		updateGuestbook(
+			com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+				guestbook) {
 
 		return _guestbookLocalService.updateGuestbook(guestbook);
 	}
 
 	@Override
-	public Guestbook updateGuestbook(
-			long userId, long guestbookId, String name,
-			com.liferay.portal.kernel.service.ServiceContext serviceContext)
+	public com.br.revisandocodigo.treinamento.guestbook.model.Guestbook
+			updateGuestbook(
+				long userId, long guestbookId, String name,
+				com.liferay.portal.kernel.service.ServiceContext serviceContext)
 		throws com.liferay.portal.kernel.exception.PortalException,
 			   com.liferay.portal.kernel.exception.SystemException {
 

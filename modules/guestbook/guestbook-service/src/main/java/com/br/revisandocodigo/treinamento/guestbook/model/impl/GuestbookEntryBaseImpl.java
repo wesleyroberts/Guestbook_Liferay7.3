@@ -6,7 +6,6 @@
 package com.br.revisandocodigo.treinamento.guestbook.model.impl;
 
 import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookEntry;
-
 import com.br.revisandocodigo.treinamento.guestbook.service.GuestbookEntryLocalServiceUtil;
 
 /**

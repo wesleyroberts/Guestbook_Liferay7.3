@@ -6,11 +6,13 @@
 package com.br.revisandocodigo.treinamento.guestbook.service.persistence.impl;
 
 import com.br.revisandocodigo.treinamento.guestbook.exception.NoSuchGuestbookEntryException;
+import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookEntry;
 import com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookEntryImpl;
 import com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookEntryModelImpl;
 import com.br.revisandocodigo.treinamento.guestbook.service.persistence.GuestbookEntryPersistence;
 import com.br.revisandocodigo.treinamento.guestbook.service.persistence.GuestbookEntryUtil;
 import com.br.revisandocodigo.treinamento.guestbook.service.persistence.impl.constants.GBPersistenceConstants;
+
 import com.liferay.petra.string.StringBundler;
 import com.liferay.portal.kernel.configuration.Configuration;
 import com.liferay.portal.kernel.dao.orm.ArgumentsResolver;
@@ -38,8 +40,6 @@ import com.liferay.portal.kernel.util.ProxyUtil;
 import com.liferay.portal.kernel.util.SetUtil;
 import com.liferay.portal.kernel.util.Validator;
 import com.liferay.portal.kernel.uuid.PortalUUIDUtil;
-
-import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookEntry;
 
 import java.io.Serializable;
 
