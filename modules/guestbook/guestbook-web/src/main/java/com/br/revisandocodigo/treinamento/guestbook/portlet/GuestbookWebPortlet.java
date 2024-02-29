@@ -13,10 +13,10 @@ import com.liferay.portal.kernel.servlet.SessionErrors;
 import com.liferay.portal.kernel.servlet.SessionMessages;
 import com.liferay.portal.kernel.util.ParamUtil;
 import com.liferay.portal.kernel.util.PortalUtil;
-import guestbook.model.Guestbook;
-import guestbook.model.GuestbookEntry;
-import guestbook.service.GuestbookEntryLocalService;
-import guestbook.service.GuestbookLocalService;
+import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
+import com.br.revisandocodigo.treinamento.guestbook.model.GuestbookEntry;
+import com.br.revisandocodigo.treinamento.guestbook.service.GuestbookEntryLocalService;
+import com.br.revisandocodigo.treinamento.guestbook.service.GuestbookLocalService;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -110,7 +110,7 @@ public class GuestbookWebPortlet extends MVCPortlet {
 				PortalUtil.copyRequestParameters(request, response);
 
 				response.setRenderParameter(
-						"mvcPath", "/guestbook/edit_entry.jsp");
+						"mvcPath", "/com/br/revisandocodigo/treinamento/guestbook/guestbook/edit_entry.jsp");
 
 				SessionErrors.add(request, e.getClass().getName());
 			}
@@ -133,7 +133,7 @@ public class GuestbookWebPortlet extends MVCPortlet {
 				PortalUtil.copyRequestParameters(request, response);
 
 				response.setRenderParameter(
-						"mvcPath", "/guestbook/edit_entry.jsp");
+						"mvcPath", "/com/br/revisandocodigo/treinamento/guestbook/guestbook/edit_entry.jsp");
 			}
 		}
 	}

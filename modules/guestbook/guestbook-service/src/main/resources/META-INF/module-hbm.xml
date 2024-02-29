@@ -2,9 +2,9 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping auto-import="false" default-lazy="false">
-	<import class="guestbook.model.Guestbook" />
-	<import class="guestbook.model.GuestbookEntry" />
-	<class name="guestbook.model.impl.GuestbookImpl" table="GB_Guestbook">
+	<import class="com.br.revisandocodigo.treinamento.guestbook.model.Guestbook" />
+	<import class="com.br.revisandocodigo.treinamento.guestbook.model.GuestbookEntry" />
+	<class name="com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookImpl" table="GB_Guestbook">
 		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="guestBookId" type="long">
 			<generator class="assigned" />
 		</id>
@@ -21,7 +21,7 @@
 		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="statusByUserName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
 		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="statusDate" type="org.hibernate.type.TimestampType" />
 	</class>
-	<class name="guestbook.model.impl.GuestbookEntryImpl" table="GB_GuestbookEntry">
+	<class name="com.br.revisandocodigo.treinamento.guestbook.model.impl.GuestbookEntryImpl" table="GB_GuestbookEntry">
 		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="entryId" type="long">
 			<generator class="assigned" />
 		</id>

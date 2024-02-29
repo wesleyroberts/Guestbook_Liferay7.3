@@ -10,8 +10,8 @@ import javax.portlet.Portlet;
 import com.br.revisandocodigo.treinamento.guestbook.constants.GuestbookWebPortletKeys;
 import com.liferay.portal.kernel.servlet.SessionErrors;
 import com.liferay.portal.kernel.servlet.SessionMessages;
-import guestbook.model.Guestbook;
-import guestbook.service.GuestbookLocalService;
+import com.br.revisandocodigo.treinamento.guestbook.model.Guestbook;
+import com.br.revisandocodigo.treinamento.guestbook.service.GuestbookLocalService;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 

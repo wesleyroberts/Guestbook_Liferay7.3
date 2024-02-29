@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <model-hints>
-	<model name="guestbook.model.Guestbook">
+	<model name="com.br.revisandocodigo.treinamento.guestbook.model.Guestbook">
 		<field name="uuid" type="String" />
 		<field name="guestBookId" type="long" />
 		<field name="name" type="String" />
@@ -16,7 +16,7 @@
 		<field name="statusByUserName" type="String" />
 		<field name="statusDate" type="Date" />
 	</model>
-	<model name="guestbook.model.GuestbookEntry">
+	<model name="com.br.revisandocodigo.treinamento.guestbook.model.GuestbookEntry">
 		<field name="uuid" type="String" />
 		<field name="entryId" type="long" />
 		<field name="name" type="String" />

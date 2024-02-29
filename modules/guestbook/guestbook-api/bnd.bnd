@@ -2,9 +2,9 @@ Bundle-Name: guestbook-api
 Bundle-SymbolicName: com.br.revisandocodigo.treinamento.guestbook.api
 Bundle-Version: 1.0.0
 Export-Package:\
-	guestbook.exception,\
-	guestbook.model,\
-	guestbook.service,\
-	guestbook.service.persistence
+	com.br.revisandocodigo.treinamento.guestbook.exception,\
+	com.br.revisandocodigo.treinamento.guestbook.model,\
+	com.br.revisandocodigo.treinamento.guestbook.service,\
+	com.br.revisandocodigo.treinamento.guestbook.service.persistence
 -check: EXPORTS
 -includeresource: META-INF/service.xml=../guestbook-service/service.xml
