@@ -8,6 +8,8 @@ import javax.portlet.ActionResponse;
 import javax.portlet.Portlet;
 
 import com.br.revisandocodigo.treinamento.guestbook.constants.GuestbookWebPortletKeys;
+import com.liferay.portal.kernel.servlet.SessionErrors;
+import com.liferay.portal.kernel.servlet.SessionMessages;
 import guestbook.model.Guestbook;
 import guestbook.service.GuestbookLocalService;
 import org.osgi.service.component.annotations.Component;
@@ -49,6 +51,7 @@ public class GuestbookAdminPortlet extends MVCPortlet {
                 try {
                         _guestbookLocalService.addGuestbook(
                                 serviceContext.getUserId(), name, serviceContext);
+                        SessionMessages.add(request, "guestbookAdded");
                 }
                 catch (PortalException pe) {
 
@@ -72,6 +75,7 @@ public class GuestbookAdminPortlet extends MVCPortlet {
                 try {
                         _guestbookLocalService.updateGuestbook(
                                 serviceContext.getUserId(), guestbookId, name, serviceContext);
+                        SessionMessages.add(request, "guestbookUpdated");
 
                 } catch (PortalException pe) {
 
@@ -93,11 +97,13 @@ public class GuestbookAdminPortlet extends MVCPortlet {
 
                 try {
                         _guestbookLocalService.deleteGuestbook(guestbookId, serviceContext);
+                        SessionMessages.add(request, "guestbookDeleted");
                 }
                 catch (PortalException pe) {
 
                         Logger.getLogger(GuestbookAdminPortlet.class.getName()).log(
                                 Level.SEVERE, null, pe);
+                        SessionErrors.add(request, pe.getClass().getName());
                 }
         }
 

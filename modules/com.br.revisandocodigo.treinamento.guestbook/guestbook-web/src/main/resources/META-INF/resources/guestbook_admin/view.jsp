@@ -1,4 +1,7 @@
 <%@include file="../init.jsp"%>
+<liferay-ui:success key="guestbookAdded" message="guestbook-added" />
+<liferay-ui:success key="guestbookUpdated" message="guestbook-updated" />
+<liferay-ui:success key="guestbookDeleted" message="guestbook-deleted" />
 
 <liferay-ui:search-container
     total="<%= GuestbookLocalServiceUtil.getGuestbooksCount(scopeGroupId) %>">
