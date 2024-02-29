@@ -7,4 +7,4 @@ Export-Package:\
 	guestbook.service,\
 	guestbook.service.persistence
 -check: EXPORTS
--includeresource: META-INF/service.xml=../com.br.revisandocodigo.treinamento.guestbook-service/service.xml
+-includeresource: META-INF/service.xml=../guestbook-service/service.xml
