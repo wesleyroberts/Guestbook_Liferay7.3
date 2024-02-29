@@ -3,7 +3,7 @@
 Mapping 7.2.0//EN" "http://www.liferay.com/dtd/liferay-resource-action-mapping_7_2_0.dtd">
 <resource-action-mapping>
     <model-resource>
-        <model-name>com.liferay.docs.guestbook</model-name>
+        <model-name>com.br.revisandocodigo.treinamento.guestbook</model-name>
         <portlet-ref>
             <portlet-name>com_liferay_docs_guestbook_portlet_GuestbookPortlet</portlet-name>
             <portlet-name>com_liferay_docs_guestbook_portlet_GuestbookAdminPortlet</portlet-name>
