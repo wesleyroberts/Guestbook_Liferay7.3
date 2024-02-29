@@ -1,5 +1,5 @@
-Bundle-Name: com.br.revisandocodigo.treinamento.guestbook-service
-Bundle-SymbolicName: guestbook.service
+Bundle-Name: guestbook-service
+Bundle-SymbolicName: com.br.revisandocodigo.treinamento.guestbook.service
 Bundle-Version: 1.0.0
 Liferay-Require-SchemaVersion: 1.0.0
 Liferay-Service: true

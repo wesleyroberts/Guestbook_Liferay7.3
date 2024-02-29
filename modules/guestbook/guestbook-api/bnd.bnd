@@ -1,5 +1,5 @@
-Bundle-Name: com.br.revisandocodigo.treinamento.guestbook-api
-Bundle-SymbolicName: guestbook.api
+Bundle-Name: guestbook-api
+Bundle-SymbolicName: com.br.revisandocodigo.treinamento.guestbook.api
 Bundle-Version: 1.0.0
 Export-Package:\
 	guestbook.exception,\

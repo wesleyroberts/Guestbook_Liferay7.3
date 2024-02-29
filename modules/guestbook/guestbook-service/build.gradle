@@ -1,5 +1,5 @@
 dependencies {
-	api project(":modules:com.br.revisandocodigo.treinamento.guestbook:com.br.revisandocodigo.treinamento.guestbook-api")
+	api project(":modules:guestbook:guestbook-api")
 
 	compileOnly group: "com.liferay.portal", name: "release.portal.api"
 }
