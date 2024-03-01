@@ -1,6 +1,9 @@
 dependencies {
 	api project(":modules:guestbook:guestbook-api")
 
+	compileOnly group: "com.liferay", name: "com.liferay.petra.function"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.model.adapter"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.reflect"
 	compileOnly group: "com.liferay.portal", name: "release.portal.api"
 }
 
@@ -8,4 +11,4 @@ buildService {
 	apiDir = "../guestbook-api/src/main/java"
 }
 
-group = "guestbook"
+group = "com.br.revisandocodigo.treinamento.guestbook"
